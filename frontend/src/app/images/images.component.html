@@ -1,0 +1,7 @@
+<div class="allDiv" (scroll)="onScroll(allDiv)" #allDiv>
+  <app-top-menu></app-top-menu>
+
+  <div class="imagesGrid">
+    <app-little-image  *ngFor="let image of images" [id]="image._id" [image]="image.image_name"></app-little-image>
+  </div>
+</div>

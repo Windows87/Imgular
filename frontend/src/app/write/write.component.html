@@ -1,0 +1,13 @@
+<div class="write">
+  <app-top-menu></app-top-menu>
+  <div class="writeDiv">
+  	<div class="errorDiv">{{ error }}</div>
+  	<form (submit)="onSubmit($event)">
+  	  <img (click)="openFileInput(fileInput)" [src]="srcImage ? srcImage : 'assets/img/default-image.jpg'" class="writeImg" />
+  	  <input type="file" (change)="onFileChange($event)" accept=".png, .jpg, .jpeg, .gif" #fileInput/>
+  	  <input type="text" placeholder="Title" [(ngModel)]="writeObject.title" [ngModelOptions]="{standalone: true}" />
+  	  <input *ngIf="writeObject.image && writeObject.title && !uploading" type="submit" value="Post" />
+  	  <p *ngIf="uploading" class="uploading">Uploading..</p>
+  	</form>
+  </div>
+<div>

@@ -1,0 +1,7 @@
+<div>
+  <app-top-menu></app-top-menu>
+  <div *ngIf="imageData !== {}" class="imageDiv">
+    <img [src]="imageData.image_name ? url + imageData.image_name : ''" />
+    <h2>{{ imageData.title }}</h2>
+  </div>
+</div>
