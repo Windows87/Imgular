@@ -1,7 +1,7 @@
 # Imgular
 Upload and compress of images with NodeJS (REST API) and Angular.
 
-# Screenshots
+## Screenshots
 <div>
   <img src="https://github.com/Windows87/imgular/raw/master/readme-images/home.jpg" width="30%">
   <img src="https://github.com/Windows87/imgular/raw/master/readme-images/image.jpg" width="30%">
