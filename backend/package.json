@@ -18,7 +18,7 @@
     "express": "^4.16.3",
     "express-formidable": "^1.0.0",
     "mongoose": "^5.1.6",
-    "sharp": "^0.20.5"
+    "sharp": "^0.30.5"
   },
   "bugs": {
     "url": "https://github.com/Windows87/imgular/issues"
